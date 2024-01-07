@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyBirdsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit of measurement"/>
+        <Spinner
+            android:id="@+id/MileageSpinner"
+            android:entries="@array/unit"
+            android:background="@drawable/settings_edt"
+            android:layout_width="71dp"
+            android:text="Type"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:spinnerMode="dropdown"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot spot Zone"/>
+        <EditText
+            android:id="@+id/ZoneSpinner"
+            android:numeric="integer"
+            android:background="@drawable/settings_edt"
+            android:layout_width="71dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:spinnerMode="dropdown"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
